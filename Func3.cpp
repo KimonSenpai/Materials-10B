@@ -8,6 +8,16 @@ void swap(T& a, T& b){
     b = t;
 }
 
+template<typename T>
+void rev(T* beg, T* end){
+    end--;
+    while(beg < end){
+        swap(*beg, *end);
+        beg++;
+        end--;
+    }
+}
+
 
 int main(){
     int a = 3, b = 5;
